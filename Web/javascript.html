@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+var truth = "Are you afriad of the dark?";
+var truth1 = "Do you stil wet the bed?";
+var truth2 = "How old were you when you learned how to program?";
+var truth3= "What is your favorite programming Language?";
+var truth4= "What is your Social Security Number?";
+
+var dare = "Scream at the top of your lungs";
+var dare1 = "Let someone punch you in the arm as hard as they can";
+var dare2 = "Don't speak until it's your turn again";
+var dare3= "Hold your breath for 30 minutes"
+var dare4= "Report any persons of treason to the overlord watch command immediatly?"
+
+function myDareFunction() {
+
+
+	var a =Math.floor(Math.random() * 5) + 1;
+	if (a === 1) {document.getElementById("demo").innerHTML = dare;}
+	else if (a === 2) {document.getElementById("demo").innerHTML = dare1;}
+	else if (a === 3) {document.getElementById("demo").innerHTML = dare2;}
+	else if (a === 4) {document.getElementById("demo").innerHTML = dare3;}
+	else if (a === 5) {document.getElementById("demo").innerHTML = dare4;}
+
+    
+
+
+}
+
+
+function myTruthFunction() {
+    var a =Math.floor(Math.random() * 5) + 1;
+	if (a === 1) {document.getElementById("demo").innerHTML = truth;}
+	else if (a === 2) {document.getElementById("demo").innerHTML = truth1;}
+	else if (a === 3) {document.getElementById("demo").innerHTML = truth2;}
+	else if (a === 4) {document.getElementById("demo").innerHTML = truth3;}
+	else if (a === 5) {document.getElementById("demo").innerHTML = truth4;}
+
+}
+
+</script>
+</head>
+
+<body>
+
+<h1>My Web Page</h1>
+
+<button type="button" onclick="myTruthFunction()">Truth</button>
+<button type="button" onclick="myDareFunction()">Dare</button>
+
+<p id="demo"></p>
+
+</body>
+</html>

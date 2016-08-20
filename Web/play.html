@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Dystruth or Dare!?</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <script>
+
+    var truth = "Are you afriad of the dark?";
+    var truth1 = "Do you stil wet the bed?";
+    var truth2 = "How old were you when you learned how to program?";
+    var truth3= "What is your favorite programming Language?";
+    var truth4= "What is your Social Security Number? <form><input style='color: black;' type='text' name='ssn' placeholder='xxx-xx-xxxx'><form>";
+
+    var dare = "Scream at the top of your lungs";
+    var dare1 = "Let someone punch you in the arm as hard as they can";
+    var dare2 = "Don't speak until it's your turn again";
+    var dare3= "Hold your breath for 30 minutes"
+    var dare4= "Report any persons of treason to the overlord watch command immediatly"
+
+    function myDareFunction() {
+
+
+    	var a =Math.floor(Math.random() * 5) + 1;
+    	if (a === 1) {document.getElementById("demo").innerHTML = dare;}
+    	else if (a === 2) {document.getElementById("demo").innerHTML = dare1;}
+    	else if (a === 3) {document.getElementById("demo").innerHTML = dare2;}
+    	else if (a === 4) {document.getElementById("demo").innerHTML = dare3;}
+    	else if (a === 5) {document.getElementById("demo").innerHTML = dare4;}
+
+
+
+
+    }
+
+
+    function myTruthFunction() {
+        var a =Math.floor(Math.random() * 5) + 1;
+    	if (a === 1) {document.getElementById("demo").innerHTML = truth;}
+    	else if (a === 2) {document.getElementById("demo").innerHTML = truth1;}
+    	else if (a === 3) {document.getElementById("demo").innerHTML = truth2;}
+    	else if (a === 4) {document.getElementById("demo").innerHTML = truth3;}
+    	else if (a === 5) {document.getElementById("demo").innerHTML = truth4;}
+
+    }
+
+    </script>
+    <body>
+      <div id="home"></div>
+      <div class="bg"></div>
+      <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+          <div class="inner cover">
+            <div class="container">
+              <h1 class="page-header">CHOOSE YOUR DESTINY</h1>
+              <div class="row">
+                <div class="col-md-4">
+                  <button type="button" class="btn btn-success btn-lg outline" onclick="myTruthFunction()">Truth</button>
+                </div>
+                <div class="col-md-4">
+                  <h3>OR</h3>
+                </div>
+                <div class="col-md-4">
+                  <button type="button" class="btn btn-danger btn-lg outline" onclick="myDareFunction()">Dare</button>
+                </div>
+              </div>
+              <h3 id="demo"></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

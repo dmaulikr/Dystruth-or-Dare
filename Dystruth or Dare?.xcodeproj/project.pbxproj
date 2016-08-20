@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4CEF15041D67EE5700A2D951 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF15031D67EE5700A2D951 /* AppDelegate.swift */; };
-		4CEF15061D67EE5700A2D951 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF15051D67EE5700A2D951 /* ViewController.swift */; };
+		4CEF15041D67EE5700A2D951 /* MHAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF15031D67EE5700A2D951 /* MHAppDelegate.swift */; };
+		4CEF15061D67EE5700A2D951 /* MHSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF15051D67EE5700A2D951 /* MHSelectionViewController.swift */; };
 		4CEF15091D67EE5700A2D951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CEF15071D67EE5700A2D951 /* Main.storyboard */; };
 		4CEF150B1D67EE5700A2D951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CEF150A1D67EE5700A2D951 /* Assets.xcassets */; };
 		4CEF150E1D67EE5700A2D951 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CEF150C1D67EE5700A2D951 /* LaunchScreen.storyboard */; };
 		4CEF15191D67EE5800A2D951 /* Dystruth_or_Dare_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF15181D67EE5800A2D951 /* Dystruth_or_Dare_Tests.swift */; };
 		4CEF15241D67EE5800A2D951 /* Dystruth_or_Dare_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF15231D67EE5800A2D951 /* Dystruth_or_Dare_UITests.swift */; };
+		4CEF15321D68157400A2D951 /* MHActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF15311D68157400A2D951 /* MHActionViewController.swift */; };
+		4CEF15341D6815E200A2D951 /* MHAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF15331D6815E200A2D951 /* MHAppearance.swift */; };
+		4CEF15361D68199300A2D951 /* MHAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF15351D68199300A2D951 /* MHAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +38,8 @@
 
 /* Begin PBXFileReference section */
 		4CEF15001D67EE5700A2D951 /* Dystruth or Dare?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dystruth or Dare?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CEF15031D67EE5700A2D951 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4CEF15051D67EE5700A2D951 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4CEF15031D67EE5700A2D951 /* MHAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHAppDelegate.swift; sourceTree = "<group>"; };
+		4CEF15051D67EE5700A2D951 /* MHSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHSelectionViewController.swift; sourceTree = "<group>"; };
 		4CEF15081D67EE5700A2D951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CEF150A1D67EE5700A2D951 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CEF150D1D67EE5700A2D951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		4CEF151F1D67EE5800A2D951 /* Dystruth or Dare?UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dystruth or Dare?UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CEF15231D67EE5800A2D951 /* Dystruth_or_Dare_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dystruth_or_Dare_UITests.swift; sourceTree = "<group>"; };
 		4CEF15251D67EE5800A2D951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CEF15311D68157400A2D951 /* MHActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHActionViewController.swift; sourceTree = "<group>"; };
+		4CEF15331D6815E200A2D951 /* MHAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHAppearance.swift; sourceTree = "<group>"; };
+		4CEF15351D68199300A2D951 /* MHAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +103,12 @@
 		4CEF15021D67EE5700A2D951 /* Dystruth or Dare? */ = {
 			isa = PBXGroup;
 			children = (
-				4CEF15031D67EE5700A2D951 /* AppDelegate.swift */,
-				4CEF15051D67EE5700A2D951 /* ViewController.swift */,
+				4CEF15031D67EE5700A2D951 /* MHAppDelegate.swift */,
+				4CEF15051D67EE5700A2D951 /* MHSelectionViewController.swift */,
 				4CEF15071D67EE5700A2D951 /* Main.storyboard */,
+				4CEF15331D6815E200A2D951 /* MHAppearance.swift */,
+				4CEF15311D68157400A2D951 /* MHActionViewController.swift */,
+				4CEF15351D68199300A2D951 /* MHAction.swift */,
 				4CEF150A1D67EE5700A2D951 /* Assets.xcassets */,
 				4CEF150C1D67EE5700A2D951 /* LaunchScreen.storyboard */,
 				4CEF150F1D67EE5700A2D951 /* Info.plist */,
@@ -187,6 +196,7 @@
 		4CEF14F81D67EE5700A2D951 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MH;
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Michael Hulet";
@@ -262,8 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CEF15061D67EE5700A2D951 /* ViewController.swift in Sources */,
-				4CEF15041D67EE5700A2D951 /* AppDelegate.swift in Sources */,
+				4CEF15061D67EE5700A2D951 /* MHSelectionViewController.swift in Sources */,
+				4CEF15321D68157400A2D951 /* MHActionViewController.swift in Sources */,
+				4CEF15361D68199300A2D951 /* MHAction.swift in Sources */,
+				4CEF15341D6815E200A2D951 /* MHAppearance.swift in Sources */,
+				4CEF15041D67EE5700A2D951 /* MHAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +430,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K3ZLWH83BT;
 				INFOPLIST_FILE = "Dystruth or Dare?/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.hulet.michael.Dystruth-or-Dare-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -430,6 +444,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K3ZLWH83BT;
 				INFOPLIST_FILE = "Dystruth or Dare?/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.hulet.michael.Dystruth-or-Dare-";
 				PRODUCT_NAME = "$(TARGET_NAME)";

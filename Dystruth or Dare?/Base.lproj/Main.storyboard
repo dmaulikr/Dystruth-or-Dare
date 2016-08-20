@@ -1,14 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11191" systemVersion="16A286a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11156"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Selection View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MHSelectionViewController" customModule="Dystruth_or_Dare_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +18,113 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJ7-S2-xrL">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="7lG-16-DN5"/>
+                                    <constraint firstAttribute="height" constant="21" id="ZuD-d2-3iX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.29787122483221479" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tL-1d-KAN">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="mnl-LM-WHo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Truth"/>
+                                <connections>
+                                    <segue destination="NQC-i3-tlm" kind="presentation" identifier="truth" animates="NO" id="4ko-eF-sRW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPe-pE-bMs">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="1ku-uM-Pto"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Dare">
+                                    <color key="titleColor" red="0.92156862745098034" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="NQC-i3-tlm" kind="presentation" identifier="dare" animates="NO" id="6I6-Ub-FX3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.89673121353158836" blue="0.19714362182623402" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rPe-pE-bMs" firstAttribute="top" secondItem="lJ7-S2-xrL" secondAttribute="bottom" constant="111" id="JKM-Lz-GJT"/>
+                            <constraint firstItem="lJ7-S2-xrL" firstAttribute="top" secondItem="1tL-1d-KAN" secondAttribute="bottom" constant="111" id="NoT-XS-cK5"/>
+                            <constraint firstItem="1tL-1d-KAN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="P1O-CJ-7q2"/>
+                            <constraint firstItem="rPe-pE-bMs" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Y7X-ba-AGM"/>
+                            <constraint firstItem="rPe-pE-bMs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aVm-ed-okT"/>
+                            <constraint firstItem="lJ7-S2-xrL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mvP-xF-T4M"/>
+                            <constraint firstItem="lJ7-S2-xrL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qJv-Q1-Rdn"/>
+                            <constraint firstItem="1tL-1d-KAN" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rrd-gi-HXI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="buttons" destination="1tL-1d-KAN" collectionClass="NSMutableArray" id="0NM-BN-kLG"/>
+                        <outletCollection property="buttons" destination="rPe-pE-bMs" collectionClass="NSMutableArray" id="xSC-6k-eOL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+        <!--Action View Controller-->
+        <scene sceneID="EbK-lZ-Kdv">
+            <objects>
+                <viewController id="NQC-i3-tlm" customClass="MHActionViewController" customModule="Dystruth_or_Dare_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XMd-r4-okq"/>
+                        <viewControllerLayoutGuide type="bottom" id="pPZ-EE-E4h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hW4-sF-udt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g00-f2-vGd">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="ijl-UK-Kd8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="back" destination="NQC-i3-tlm" eventType="touchUpInside" id="pGM-Fv-zbh"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lorem" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BY6-R1-akQ">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BY6-R1-akQ" firstAttribute="top" secondItem="XMd-r4-okq" secondAttribute="bottom" id="CwT-Jx-3rc"/>
+                            <constraint firstItem="pPZ-EE-E4h" firstAttribute="top" secondItem="g00-f2-vGd" secondAttribute="bottom" constant="20" id="DYu-lS-Krk"/>
+                            <constraint firstItem="BY6-R1-akQ" firstAttribute="trailing" secondItem="hW4-sF-udt" secondAttribute="trailingMargin" id="FbM-AK-cZn"/>
+                            <constraint firstItem="g00-f2-vGd" firstAttribute="top" secondItem="BY6-R1-akQ" secondAttribute="bottom" constant="8" id="LAm-r3-SBi"/>
+                            <constraint firstItem="BY6-R1-akQ" firstAttribute="leading" secondItem="hW4-sF-udt" secondAttribute="leadingMargin" id="Rfg-rx-niJ"/>
+                            <constraint firstItem="g00-f2-vGd" firstAttribute="trailing" secondItem="hW4-sF-udt" secondAttribute="trailingMargin" id="fQ8-Yp-Nho"/>
+                            <constraint firstItem="g00-f2-vGd" firstAttribute="leading" secondItem="hW4-sF-udt" secondAttribute="leadingMargin" id="xBb-pa-n4h"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="actionLabel" destination="BY6-R1-akQ" id="fJe-MJ-yjl"/>
+                        <outlet property="backButton" destination="g00-f2-vGd" id="usH-B4-pHy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hMS-7x-BQq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="872.79999999999995" y="36.431784107946029"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6I6-Ub-FX3"/>
+    </inferredMetricsTieBreakers>
 </document>
